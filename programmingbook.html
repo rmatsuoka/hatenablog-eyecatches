@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{BlogLanguage}">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        --main-color: #008fc7;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        width: 300px;
+      }
+      .top {
+        font-size: 60px;
+      }
+      .header {
+        border-top: 30px solid var(--main-color);
+        text-align: center;
+        margin: 0 50px;
+        color: black;
+      }
+      .animal::after {
+        content: "🐳";
+        position: absolute;
+        top: 400px;
+        left: 800px;
+        font-size: 200px;
+        filter: grayscale(1);
+      }
+      .main-wrapper {
+        margin: 80px 50px 0;
+        padding: 50px;
+        background-color: var(--main-color);
+        color: white;
+        font-size: 70px;
+      }
+      .category {
+        position: absolute;
+        background: black;
+        color: white;
+        word-break: keep-all;
+        rotate: 45deg;
+        top: 100px;
+        left: 750px;
+        width: 10em;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="top">
+    <div class="header">
+      <div class="blog-title">
+        <div class="title">{BlogTitle}</div>
+      </div>
+    </div>
+    <div class="category">{FirstCategory}</div>
+    <div class="animal"></div>
+    <div class="main-wrapper">
+      <div class="main">
+        <div class="entry-title">{Title}</div>
+      </div>
+    </div>
+  </body>
+</html>
